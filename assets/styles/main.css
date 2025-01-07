@@ -36,6 +36,33 @@
     --fw-regular:400;
     --main-section-padding: 140px 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Montserrat", serif;
+    line-height: 1.6;
+}
+.container {
+    width: min(1170px , 100% - 40px);
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    font: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+input,
+button,
+textarea{
+    font: inherit;
+    border: none;
+    outline: none;
+    color: inherit;
+}
+img{
+    max-width: 100%;
 }
