@@ -17,6 +17,7 @@
     --light-gray-2:#ECECEC;
     --success-color:#2DC071;
     --hover-color:#2A7CC7;
+    --light-text-color:#ffffff;
     --primary-text-color:#FC724D;
     --secondary-text-color:#737373;
     --text-color:#252B42;
@@ -42,9 +43,10 @@ html{
 body{
     font-family: "Montserrat", serif;
     line-height: 1.6;
+    font-weight: var(--fw-regular);
 }
 .container {
-    width: min(1170px , 100% - 40px);
+    width: min(1070px , 100% - 40px);
     margin: auto;
 }
 ul{
@@ -65,4 +67,92 @@ textarea{
 }
 img{
     max-width: 100%;
+}
+/* Utility Classes */
+.flex{
+    display: flex;
+}
+.i-flex{
+    display: inline-flex;
+}
+.grid{
+    display: grid;
+}
+h1.title{
+    font-size: var(--fs-58px);
+    font-weight: var(--fw-bold);
+    color: var(--text-color);
+}
+h2.title{
+    font-size: var(--fs-40pxpx);
+    font-weight: var(--fw-bold);
+    color: var(--text-color);
+}
+h3.title{
+    font-size: var(--fs-24px);
+    font-weight: var(--fw-bold);
+    color: var(--text-color);
+}
+.special-title{
+    font-size: var(--fs-16px);
+    font-weight: var(--fw-bold);
+    color: var(--text-color);
+}
+span.title{
+    font-size: var(--fs-16px);
+    font-weight: var(--fw-bold);
+    color: var(--primary-color);
+}
+p.description{
+    font-size: var(--fs-14px);
+    color: var(--text-color);
+}
+.btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+}
+.link{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--fs-14px);
+    font-weight: var(--fw-bold);
+    color: var(--primary-color);
+}
+.link-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 37px;
+    color: var(--primary-color);
+}
+.overline{
+    position: relative;
+}
+.overline::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom:35px;
+    width: 94px;
+    height: 7px;
+    background-color: var(--danger-color);
+}
+.underline{
+    position: relative;
+}
+.underline::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:20px;
+    width: 50px;
+    height: 2px;
+    background-color: var(--danger-color);
 }
