@@ -75,6 +75,7 @@ img{
 }
 .i-flex{
     display: inline-flex;
+    align-items: center;
 }
 .grid{
     display: grid;
@@ -112,7 +113,10 @@ p.description{
     display: inline-flex;
     align-items: center;
     gap: 15px;
-    padding: 15px 30px;
+    padding: 15px 25px;
+    font-size: var(--fs-14px);
+    font-weight: var(--fw-bold);
+    border-radius: 5px;
     background-color: var(--primary-color);
     color: var(--light-text-color);
 }
