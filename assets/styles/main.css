@@ -41,6 +41,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    padding: 20px;
     font-family: "Montserrat", serif;
     line-height: 1.6;
     font-weight: var(--fw-regular);
@@ -84,7 +85,7 @@ h1.title{
     color: var(--text-color);
 }
 h2.title{
-    font-size: var(--fs-40pxpx);
+    font-size: var(--fs-40px);
     font-weight: var(--fw-bold);
     color: var(--text-color);
 }
@@ -130,6 +131,8 @@ p.description{
     padding: 10px 20px;
     border: 1px solid var(--primary-color);
     border-radius: 37px;
+    font-size: var(--fs-14px);
+    font-weight: var(--fw-bold);
     color: var(--primary-color);
 }
 .overline{
@@ -139,7 +142,7 @@ p.description{
     content: "";
     position: absolute;
     left: 0;
-    bottom:35px;
+    top:-35px;
     width: 94px;
     height: 7px;
     background-color: var(--danger-color);
@@ -151,8 +154,12 @@ p.description{
     content: "";
     position: absolute;
     left: 0;
-    top:20px;
+    bottom:-20px;
     width: 50px;
     height: 2px;
     background-color: var(--danger-color);
 }
+section{
+    padding: var(--main-section-padding);
+}
+/* Component */
