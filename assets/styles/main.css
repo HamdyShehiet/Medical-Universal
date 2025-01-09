@@ -240,6 +240,6 @@ header .container nav ul li .link-style:hover{
     }
     header .container nav ul li .login-link{
         margin-left: 150px;
-        color: var(--primary-text-color);
+        color: var(--primary-color);
     }
 }
