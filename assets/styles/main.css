@@ -245,3 +245,8 @@ header .container nav ul li a.link-style{
         color: var(--primary-color);
     }
 }
+/* .hero {
+    background-color: #26335D;
+    min-height: 100vh;
+    background: url(../images/hero_background.webp) no-repeat top right;
+} */
