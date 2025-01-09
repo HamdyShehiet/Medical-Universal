@@ -18,7 +18,6 @@
     --success-color:#2DC071;
     --hover-color:#2A7CC7;
     --light-text-color:#ffffff;
-    --primary-text-color:#FC724D;
     --secondary-text-color:#737373;
     --text-color:#252B42;
     --faded-primary-color:#F9FDFF;
@@ -187,6 +186,12 @@ header .container nav ul li a{
     font-size: var(--fs-14px);
     font-weight: var(--fw-bold);
     color: var(--secondary-text-color);
+}
+header .container nav ul li a.link-style{
+    transition: all 300ms ease;
+}
+header .container nav ul li .link-style:hover{
+    color: var(--primary-color);
 }
 @media (max-width:991px) {
     header .container nav ul{
