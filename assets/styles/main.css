@@ -110,7 +110,7 @@ p.description{
     display: inline-flex;
     align-items: center;
     gap: 15px;
-    padding: 15px 25px;
+    padding: 15px 35px;
     font-size: var(--fs-14px);
     font-weight: var(--fw-bold);
     border-radius: 5px;
@@ -233,6 +233,10 @@ header .container nav ul li a.link-style{
     header .container nav ul li .link-style:hover{
         color: var(--primary-color);
     }
+    header .container nav ul li .login-link{
+        margin-left: 150px;
+        color: var(--primary-color);
+    }
     header .container nav ul li .join-us{
         display: inline-flex;
         align-items: center;
@@ -243,10 +247,6 @@ header .container nav ul li a.link-style{
         border-radius: 5px;
         background-color: var(--primary-color);
         color: var(--light-text-color);
-    }
-    header .container nav ul li .login-link{
-        margin-left: 150px;
-        color: var(--primary-color);
     }
 }
 .hero {
@@ -265,7 +265,8 @@ header .container nav ul li a.link-style{
     color: var(--secondary-text-color);
 }
 .hero .container article.col .more{
-    gap: 10px;
+    flex-wrap: wrap;
+    gap:20px 10px;
 }
 .hero .container article.col .more >.learn-more{
     border: 1px solid var(--primary-color);
