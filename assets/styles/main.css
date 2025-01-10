@@ -285,9 +285,15 @@ header .container nav ul li a.link-style{
         width: 100%;
     }
 }
-.impressions .container .section-info{
+section .container .section-info{
     flex-direction: column;
     gap: 10px;
+}
+@media (min-width:992px) {
+    section .container .section-info{
+        max-width: 450px;
+        width: 100%;
+    }
 }
 .impressions .container .impressions-list{
     grid-template-columns: repeat(auto-fit,min(240px,100%));
@@ -310,9 +316,20 @@ header .container nav ul li a.link-style{
 .impressions .container .impression:nth-child(3) .underline::after{
     background-color: var(--light-background-color);
 }
+section .information{
+    row-gap: 40px;
+}
 @media (min-width:992px) {
-    .impressions .container .section-info{
-        max-width: 450px;
-        width: 100%;
+    section .information{
+        grid-template-columns: 45% 48%;
+        justify-content: space-between;
+        align-items: center;
     }
+}
+section .container .section-details{
+    flex-direction: column;
+    gap: 35px;
+}
+section .container .video-box{
+    text-align: center;
 }
