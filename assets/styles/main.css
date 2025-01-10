@@ -25,6 +25,7 @@
     --faded-secondary-color-2:#B6D7FF;
     --disabled-element-color:#8EC2F2;
     --light-drop-shadow: 0 2px 4px 0 rgb(0 0 0 /.1);
+    --light-drop-shadow-2: 0 4px 4px 0 rgb(0 0 0 /.25);
     --accentued-drop-shadow:0 13px 19px 0 rgb(0 0 0 /.07);
     --fs-58px:58px;
     --fs-40px:40px;
@@ -281,6 +282,37 @@ header .container nav ul li a.link-style{
 @media (min-width:992px) {
     .hero .container article.col{
         max-width: 600px;
+        width: 100%;
+    }
+}
+.impressions .container .section-info{
+    flex-direction: column;
+    gap: 10px;
+}
+.impressions .container .impressions-list{
+    grid-template-columns: repeat(auto-fit,min(240px,100%));
+    justify-content: center;
+    gap: 40px 28px;
+    margin-top: 112px;
+}
+.impressions .container .impression{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--light-background-color);
+    padding: 35px 40px;
+    box-shadow: var(--light-drop-shadow-2);
+}
+.impressions .container .impression:nth-child(3){
+    background-color:var(--primary-color) ;
+    transform: scale(1.1);
+}
+.impressions .container .impression:nth-child(3) .underline::after{
+    background-color: var(--light-background-color);
+}
+@media (min-width:992px) {
+    .impressions .container .section-info{
+        max-width: 450px;
         width: 100%;
     }
 }
