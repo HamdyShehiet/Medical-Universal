@@ -34,7 +34,7 @@
     --fs-14px:14px;
     --fw-bold:700;
     --fw-regular:400;
-    --main-section-padding: 140px 0;
+    --main-section-padding: 112px 0;
 }
 html{
     scroll-behavior: smooth;
@@ -45,7 +45,7 @@ body{
 }
 .container {
     margin: auto;
-    width: min(1070px , 100% - 40px);
+    width: min(1044px , 100% - 40px);
 }
 ul{
     list-style: none;
