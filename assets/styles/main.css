@@ -16,6 +16,7 @@
     --light-gray-1:#FAFAFA;
     --light-gray-2:#ECECEC;
     --success-color:#2DC071;
+    --cadet-blue:#5AACA8;
     --hover-color:#2A7CC7;
     --light-text-color:#ffffff;
     --secondary-text-color:#737373;
@@ -316,11 +317,11 @@ section .container .section-info{
 .impressions .container .impression:nth-child(3) .underline::after{
     background-color: var(--light-background-color);
 }
-section .information{
+.our-doctors-specialization .container{
     row-gap: 40px;
 }
 @media (min-width:992px) {
-    section .information{
+    .our-doctors-specialization .container{
         grid-template-columns: 45% 48%;
         justify-content: space-between;
         align-items: center;
@@ -332,4 +333,41 @@ section .container .section-details{
 }
 section .container .video-box{
     text-align: center;
+}
+.leading-medicine  .container{
+    row-gap: 40px;
+}
+.leading-medicine .container .category .images{
+    position: relative;
+    text-align: center;
+}
+@media (max-width:991px) {
+    .leading-medicine .container .category .images>img:last-child{
+        display: none;
+    }
+}
+@media (min-width:992px) {
+    .leading-medicine  .container{
+        grid-template-columns: 50% 38%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .leading-medicine .container .category .images{
+        padding: 30px 30px 50px 70px;
+    }
+    .leading-medicine .container .category .images::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        width: 116px;
+        height: 138px;
+        background-color: var(--cadet-blue);
+    }
+    .leading-medicine .container .category .images>img:last-child{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
 }
