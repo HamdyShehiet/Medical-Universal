@@ -34,6 +34,7 @@
     --fs-20px:20px;
     --fs-16px:16px;
     --fs-14px:14px;
+    --fs-12px:12px;
     --fw-bold:700;
     --fw-regular:400;
     --main-section-padding: 112px 0;
@@ -370,4 +371,80 @@ section .container .video-box{
         bottom: 0;
         left: 0;
     }
+}
+.products .container .products-list{
+    grid-template-columns: repeat(auto-fit,min(240px,100%));
+    justify-content: center;
+    gap: 40px 28px;
+    margin-top: 112px;
+}
+.products .container .products-list .product .image-box{
+    position: relative;
+}
+.products .container .products-list .product .image-box .Icons{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100%;
+}
+.products .container .products-list .product .image-box .sale-title{
+    display: inline-flex;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 2px 10px;
+    font-size: var(--fs-14px);
+    font-weight: var(--fw-bold);
+    border-radius: 3px;
+    background-color: var(--danger-color);
+    color: var(--light-background-color);
+}
+.products .container .products-list .product .product-info{
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    padding: 25px 15px 35px 15px;
+}
+.products .container .products-list .product .product-info h3{
+    min-height: 48px;
+}
+.products .container .products-list .product .product-info .product-description {
+    justify-content: space-between;
+    align-items: center;
+    font-weight: var(--fw-bold);
+}
+.products .container .products-list .product .product-info .product-description a{
+    font-size: var(--fs-14px);
+    color: var(--primary-color);
+
+}
+.products .container .products-list .product .product-info .product-description .evaluation{
+    gap: 5px;
+    padding: 5px;
+    font-size: var(--fs-14px);
+    border-radius: 20px;
+    background-color: var(--dark-background-color);
+    color: var(--light-background-color);
+}
+.products .container .products-list .product .product-info .sales{
+    align-items: center;
+    gap: 10px;
+    font-size: var(--fs-14px);
+    font-weight: var(--fw-bold);
+    color: var(--secondary-text-color);
+}
+.products .container .products-list .product .product-info .price{
+    gap: 5px;
+    font-size: var(--fs-16px);
+    font-weight: var(--fw-bold);
+}
+.products .container .products-list .product .product-info .price span:first-child{
+    color: var(--muted-color);
+}
+.products .container .products-list .product .product-info .price strong:last-child{
+    color: var(--secondary-color-2);
 }
