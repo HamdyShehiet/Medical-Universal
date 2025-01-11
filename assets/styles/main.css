@@ -81,12 +81,12 @@ img{
     display: grid;
 }
 h1.title{
-    font-size: var(--fs-58px);
+    font-size: clamp(var(--fs-58px) - 10px,5vw,var(--fs-58px));
     font-weight: var(--fw-bold);
     color: var(--text-color);
 }
 h2.title{
-    font-size: var(--fs-40px);
+    font-size: clamp(var(--fs-40px) - 10px,5vw,var(--fs-40px));
     font-weight: var(--fw-bold);
     color: var(--text-color);
 }
