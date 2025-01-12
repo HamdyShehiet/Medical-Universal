@@ -420,7 +420,6 @@ section .container .video-box{
 .products .container .products-list .product .product-info .product-description a{
     font-size: var(--fs-14px);
     color: var(--primary-color);
-
 }
 .products .container .products-list .product .product-info .product-description .evaluation{
     gap: 5px;
