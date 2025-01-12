@@ -415,6 +415,9 @@ section .container .video-box{
 .products .container .products-list .product .product-info .product-description {
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 10px;
     font-weight: var(--fw-bold);
 }
 .products .container .products-list .product .product-info .product-description a{
@@ -446,4 +449,29 @@ section .container .video-box{
 }
 .products .container .products-list .product .product-info .price strong:last-child{
     color: var(--secondary-color-2);
+}
+.our-experts .container .testimonials{
+    grid-template-columns: repeat(auto-fit,min(502px,100%));
+    justify-content: center;
+    gap: 40px ;
+    margin-top: 112px;
+}
+.our-experts .container .testimonials .testimonial{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 30px;
+}
+.our-experts .container .testimonials .testimonial .person-image img{
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.our-experts .container .testimonials .testimonial .evaluation{
+    gap: 5px;
+}
+.our-experts .container .testimonials .testimonial .job-title{
+    font-size: var(--fs-14px);
+    font-weight: var(--fw-bold);
+    color: var(--secondary-text-color);
 }
