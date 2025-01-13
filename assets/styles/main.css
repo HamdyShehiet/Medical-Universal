@@ -62,7 +62,7 @@ input,
 button,
 textarea{
     font: inherit;
-    border: none;
+    /* border: none; */
     outline: none;
     color: inherit;
 }
