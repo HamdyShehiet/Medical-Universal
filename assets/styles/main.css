@@ -81,7 +81,7 @@ img{
     display: grid;
 }
 h1.title{
-    font-size: clamp(var(--fs-58px) - 10px,5vw,var(--fs-58px));
+    font-size: clamp(var(--fs-58px) - 20px,5vw,var(--fs-58px));
     font-weight: var(--fw-bold);
     color: var(--text-color);
 }
@@ -474,4 +474,29 @@ section .container .video-box{
     font-size: var(--fs-14px);
     font-weight: var(--fw-bold);
     color: var(--secondary-text-color);
+}
+.our-team .container .team-list{
+    grid-template-columns: repeat(auto-fit,min(238px,100%));
+    justify-content: center;
+    gap: 40px 28px;
+    margin-top: 112px;
+}
+.our-team .container .team-list .person{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--light-drop-shadow-2);
+}
+.our-team .container .team-list .person .description{
+    font-size: var(--fs-12px);
+    color: var(--secondary-text-color);
+}
+.our-team .container .team-list .person .image-box{
+    margin-bottom: 20px;
+}
+.our-team .container .team-list .person .icons{
+    gap: 20px;
 }
