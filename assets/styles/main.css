@@ -37,7 +37,7 @@
     --fs-12px:12px;
     --fw-bold:700;
     --fw-regular:400;
-    --main-section-padding: 112px 0;
+    --main-section-padding: 90px 0;
 }
 html{
     scroll-behavior: smooth;
@@ -165,7 +165,7 @@ p.description{
     height: 2px;
     background-color: var(--danger-color);
 }
-section{
+section:not(footer section){
     padding: var(--main-section-padding);
 }
 /* Component */
@@ -301,7 +301,7 @@ section .container .section-info{
     grid-template-columns: repeat(auto-fit,min(240px,100%));
     justify-content: center;
     gap: 40px 28px;
-    margin-top: 112px;
+    margin-top: 90px;
 }
 .impressions .container .impression{
     display: flex;
@@ -376,7 +376,7 @@ section .container .video-box{
     grid-template-columns: repeat(auto-fit,min(240px,100%));
     justify-content: center;
     gap: 40px 28px;
-    margin-top: 112px;
+    margin-top: 90px;
 }
 .products .container .products-list .product .image-box{
     position: relative;
@@ -454,7 +454,7 @@ section .container .video-box{
     grid-template-columns: repeat(auto-fit,min(502px,100%));
     justify-content: center;
     gap: 40px ;
-    margin-top: 112px;
+    margin-top: 90px;
 }
 .our-experts .container .testimonials .testimonial{
     flex-direction: column;
@@ -479,7 +479,7 @@ section .container .video-box{
     grid-template-columns: repeat(auto-fit,min(238px,100%));
     justify-content: center;
     gap: 40px 28px;
-    margin-top: 112px;
+    margin-top: 90px;
 }
 .our-team .container .team-list .person{
     flex-direction: column;
@@ -521,6 +521,7 @@ section .container .video-box{
     padding: 20px;
     border-radius: 5px 0 0 5px;
     border: 1px solid #E6E6E6;
+    background-color: #F9F9F9;
     color: var(--secondary-text-color);
 }
 .join-us .container form .form-box input[type="email"]::placeholder{
@@ -532,6 +533,9 @@ section .container .video-box{
     font-size: var(--fs-14px);
     background-color: var(--primary-color);
     color: var(--light-background-color);
+}
+.footer-top {
+    padding: 50px 0;
 }
 .footer-top .container{
     flex-wrap: wrap;
@@ -568,4 +572,23 @@ section .container .video-box{
 }
 .footer-top .container ul .contact a{
     gap: 10px;
+}
+.footer-bottom {
+    padding: 25px 0;
+    background-color: var(--light-gray-1);
+}
+.footer-bottom .container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+@media (max-width:991px) {
+    .footer-bottom .container{
+        justify-content: center;
+        text-align: center;
+    }
+}
+.footer-bottom .container .social-icons{
+    gap: 20px;
 }
