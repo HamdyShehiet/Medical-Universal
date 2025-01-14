@@ -533,3 +533,39 @@ section .container .video-box{
     background-color: var(--primary-color);
     color: var(--light-background-color);
 }
+.footer-top .container{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px 30px;
+}
+.footer-top .container ul{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+@media (max-width:991px) {
+    .footer-top .container ul{
+        align-items: center;
+    }
+}
+.footer-top .container ul:not(.footer-top .container ul:last-child){
+    max-width: 235px;
+    width: 100%;
+}
+.footer-top .container ul li.title{
+    margin-bottom: 10px;
+    font-weight: var(--fw-bold);
+    color: var(--text-color);
+}
+.footer-top .container ul li a{
+    font-size: var(--fs-14px);
+    font-weight: var(--fw-bold);
+    color: var(--secondary-text-color);
+}
+.footer-top .container ul .contact{
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-top .container ul .contact a{
+    gap: 10px;
+}
